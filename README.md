@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-H1wk-vVBc)
 - Live Site URL: [GitHub project page](https://manugil22.github.io/stats-preview-card-component/)
 
 ## My process
