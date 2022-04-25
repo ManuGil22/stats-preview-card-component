@@ -2,6 +2,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: hsl(233, 47%, 7%);
+    height: auto;
+}
+
+main {
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -51,7 +56,6 @@ h1 span {
     font-size: 15px;
 }
 
-
 .card-stats {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
@@ -75,4 +79,65 @@ h1 span {
     font-weight: 200;
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 14px;
+}
+
+@media (max-width: 1150px){
+    html {
+        margin: 10rem 0 15rem 0;
+        text-align: center;
+    }
+    main {
+        height: auto;
+    }
+    .card {
+        flex-direction: column;
+        height: auto;
+        max-width: 540px;
+        text-align: center;
+    }
+    .card-image {  
+        border-radius: 7px 7px 0 0;
+        max-height: 446px;
+    }
+    .card-image img {
+        border-radius: 7px 7px 0 0;
+    }
+    .card-description {
+        padding: 1rem;
+        margin: 0.6rem 1.5rem 0 1.5rem;
+    }
+    .card-stats {   
+        grid-template-columns: 0;
+        display: inline-block;
+        justify-content: center;
+        margin-top: 2.5rem;
+        width: 100%;
+    }
+    .stat {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .card {
+        flex-direction: column;
+        max-height: auto;
+        max-width: 540px;
+        margin: 0 2rem 0 2rem;
+    }
+    .card-image img {
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .card-summary {
+        font-size: 15px;
+    }
+    .stat-amount {
+        font-size: 20px;
+    }
+    .stat-heading {
+        font-size: 12px;
+    }
 }
