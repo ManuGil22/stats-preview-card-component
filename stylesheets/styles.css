@@ -18,7 +18,7 @@ body {
 }
 
 .card-image {
-    background-color: rgb(124, 30, 182);
+    background-color: hsl(277, 64%, 61%);
     border-radius: 0 7px 7px 0;
 }
 
@@ -49,6 +49,28 @@ h1 span {
     font-size: 15px;
 }
 
+
+.card-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    margin-top: 4.5rem;
+    grid-gap: 2.5rem;
+}
+
+.stat {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.stat-amount {
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .stat-heading {
+    margin-top: 0.4rem;
     font-family: 'Lexend Deca', sans-serif;
+    font-weight: 200;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
 }

@@ -10,7 +10,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@200;400&display=swap"
       rel="stylesheet">
 
     <title>Frontend Mentor | Stats preview card component</title>
@@ -27,9 +28,11 @@
           <p class="card-summary">Discover the benefits of data analytics and make better decisions regarding revenue,
             customer
             experience, and overall efficiency.</p>
-          10k+ <span class="stat-heading">COMPANIES</span>
-          314 <span class="stat-heading">TEMPLATES</span>
-          12m+ <span class="stat-heading">QUERIES</span>
+          <div class="card-stats">
+            <div class="stat"><span class="stat-amount">10k+</span><span class="stat-heading">COMPANIES</span></div>
+            <div class="stat"><span class="stat-amount">314</span><span class="stat-heading">TEMPLATES</span></div>
+            <div class="stat"><span class="stat-amount">12M+</span><span class="stat-heading">QUERIES</span></div>
+          </div>
         </div>
       </div>
     </main>
